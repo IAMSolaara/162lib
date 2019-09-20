@@ -1,0 +1,107 @@
+\hypertarget{162lib_8h}{}\section{src/162lib.h File Reference}
+\label{162lib_8h}\index{src/162lib.\+h@{src/162lib.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for 162lib.h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{162lib_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{162lib_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structtData}{t\+Data}
+\begin{DoxyCompactList}\small\item\em C/\+C++ library I use for some programs, which includes exercises done at school. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{162lib_8h_a44edab2dbf74abe9e90db151e1915fb1}{rnd\+Gen\+Init} ()
+\item 
+int \hyperlink{162lib_8h_a96cf9e2f003ddc8af7d221d7287edb75}{rnd} (int min, int max)
+\item 
+F\+I\+LE $\ast$ \hyperlink{162lib_8h_a840caba325fc39fa2e29144229b66a8a}{file\+Open} (const char filename\mbox{[}$\,$\mbox{]}, const char perm\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{162lib_8h_aab64c14e0c8d540650ac483c451ace85}{data\+Read} (\hyperlink{structtData}{t\+Data} out)
+\item 
+void \hyperlink{162lib_8h_a5f08457e89eab8c32d89799c8c647054}{fdata\+Read} (F\+I\+LE $\ast$file, \hyperlink{structtData}{t\+Data} out)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{162lib_8h_aab64c14e0c8d540650ac483c451ace85}\label{162lib_8h_aab64c14e0c8d540650ac483c451ace85}} 
+\index{162lib.\+h@{162lib.\+h}!data\+Read@{data\+Read}}
+\index{data\+Read@{data\+Read}!162lib.\+h@{162lib.\+h}}
+\subsubsection{\texorpdfstring{data\+Read()}{dataRead()}}
+{\footnotesize\ttfamily void data\+Read (\begin{DoxyParamCaption}\item[{\hyperlink{structtData}{t\+Data}}]{out }\end{DoxyParamCaption})}
+
+Read date in a format to be stored in a struct of type \hyperlink{structtData}{t\+Data} with stdin as input stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & The record into which the date needs to be stored. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{162lib_8h_a5f08457e89eab8c32d89799c8c647054}\label{162lib_8h_a5f08457e89eab8c32d89799c8c647054}} 
+\index{162lib.\+h@{162lib.\+h}!fdata\+Read@{fdata\+Read}}
+\index{fdata\+Read@{fdata\+Read}!162lib.\+h@{162lib.\+h}}
+\subsubsection{\texorpdfstring{fdata\+Read()}{fdataRead()}}
+{\footnotesize\ttfamily void fdata\+Read (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{file,  }\item[{\hyperlink{structtData}{t\+Data}}]{out }\end{DoxyParamCaption})}
+
+Read date in a format to be stored in a struct of type \hyperlink{structtData}{t\+Data} with file as input stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Pointer to the file from which the function will read. \\
+\hline
+{\em out} & The record into which the date needs to be stored. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{162lib_8h_a840caba325fc39fa2e29144229b66a8a}\label{162lib_8h_a840caba325fc39fa2e29144229b66a8a}} 
+\index{162lib.\+h@{162lib.\+h}!file\+Open@{file\+Open}}
+\index{file\+Open@{file\+Open}!162lib.\+h@{162lib.\+h}}
+\subsubsection{\texorpdfstring{file\+Open()}{fileOpen()}}
+{\footnotesize\ttfamily F\+I\+LE$\ast$ file\+Open (\begin{DoxyParamCaption}\item[{const char}]{filename\mbox{[}$\,$\mbox{]},  }\item[{const char}]{perm\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Open a file given path and mode.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & File path passed as a string. \\
+\hline
+{\em perm} & File open mode passed as a string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to opened file\textquotesingle{}s I/O stream. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{162lib_8h_a96cf9e2f003ddc8af7d221d7287edb75}\label{162lib_8h_a96cf9e2f003ddc8af7d221d7287edb75}} 
+\index{162lib.\+h@{162lib.\+h}!rnd@{rnd}}
+\index{rnd@{rnd}!162lib.\+h@{162lib.\+h}}
+\subsubsection{\texorpdfstring{rnd()}{rnd()}}
+{\footnotesize\ttfamily int rnd (\begin{DoxyParamCaption}\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+Generate a random integer between a minimum and maximum value. 
+\begin{DoxyParams}{Parameters}
+{\em min} & Minimum value. \\
+\hline
+{\em max} & Maximum value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A random integer between min and max. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{162lib_8h_a44edab2dbf74abe9e90db151e1915fb1}\label{162lib_8h_a44edab2dbf74abe9e90db151e1915fb1}} 
+\index{162lib.\+h@{162lib.\+h}!rnd\+Gen\+Init@{rnd\+Gen\+Init}}
+\index{rnd\+Gen\+Init@{rnd\+Gen\+Init}!162lib.\+h@{162lib.\+h}}
+\subsubsection{\texorpdfstring{rnd\+Gen\+Init()}{rndGenInit()}}
+{\footnotesize\ttfamily void rnd\+Gen\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Init random number generator based on time.\+h 

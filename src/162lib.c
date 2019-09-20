@@ -1,3 +1,6 @@
+/**@file
+ * This is where the code for the library resides.
+ */
 #include "162lib.h"
 
 #include <stdio.h>
